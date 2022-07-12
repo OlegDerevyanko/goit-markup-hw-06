@@ -13,6 +13,7 @@
     --icon-background-color: rgba(255, 255, 255, 0.1);
     --bgt-color: rgba(47, 48, 58, 0.8);
     --bgo-color: rgba(33, 150, 243, 0.9);
+    
     --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
     a {
@@ -322,14 +323,14 @@
         rgb(0 0 0 / 14%), 0px 2px 1px 
         rgb(0 0 0 / 20%);
         border-radius: 4px;
+        padding: 40px;
         
         
         
     }
     .modal .button-close {
         position: absolute;
-        display: inline-block;
-        align-items: center;
+        
         
         top: 8px;
         right: 8px;
@@ -343,8 +344,130 @@
         
     }
     .modal .button-icon-close {
+        
+        
+        
         color: #000000
         
+    }
+    .modal .main-text {
+        font-family: 'Roboto';
+        margin: 0;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.15;
+        text-align: center;
+        letter-spacing: 0.03em;
+
+        color: #212121;
+    }
+    .modal .text {
+        font-family: 'Roboto';
+        
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.17;
+        padding-bottom: 4px;
+        margin-top: 10px;
+
+
+        letter-spacing: 0.01em;
+
+        color: #757575;
+      }
+  
+    .modal .comment {
+        padding: 12px 16px;
+        resize: none;
+        min-width: 448px;
+        min-height: 120px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        margin-bottom: 20px;
+    }
+    .modal .comment::placeholder {
+        font-family: 'Roboto';
+       
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
+        color: rgba(117, 117, 117, 0.5);
+        
+    } 
+    .modal .input {
+        min-width: 448px;
+        min-height: 40px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+    }
+    .modal .form-label {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .modal .form-input {
+        margin-right: 7px;
+        
+    }
+    
+    
+    .modal .license-text {
+        font-family: 'Roboto';
+        
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        text-align: center;
+        
+       
+        
+
+        letter-spacing: 0.03em;
+
+        color: #757575;
+    }
+    .modal .license {
+        font-family: 'Roboto';
+        
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        margin-top: 20px;
+        margin-bottom: 30px;
+
+        letter-spacing: 0.03em;
+
+        color: rgba(33, 150, 243, 1);
+    }
+
+    
+    .modal .submit-button {
+            margin: 30px 124px 0 124px;
+        
+            padding: 10px 55px;
+            min-width: 200px;
+            min-height: 50px;
+            font-family: 'Roboto';
+            background-color: var(--accent-color);
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1.88;
+            letter-spacing: 0.06em;
+            color: var(--tt-color);
+            
+            display: block;
+            cursor: pointer;
+            border: none;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+            
+
+    }
+    label {
+        display: flex;
+        flex-direction: column;
     }
    /* Section 1 End */
 
@@ -692,10 +815,13 @@
         background-color: var(--tbg-color);
         padding: 0;
         padding-bottom: 60px; 
-        padding-top: 60px;       
+        padding-top: 60px; 
+        
+           
     }
     .footer-container {
         display: flex;
+        justify-content: space-between;
         align-items: baseline;
     }
     .footer-link {
@@ -853,6 +979,75 @@
     .list-team .button:focus .button-icon {
         fill: var(--tt-color);
         
+    }
+    .h3-foot-sign {
+        margin-top: 12px;
+        margin-bottom: 20px;
+        
+        
+        font-weight:700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;   
+        color: var(--tt-color); 
+    }
+    .subscribe .sign {
+        display: flex;
+        align-items: center;
+        
+        
+       
+    }
+    .sign .signmail{
+        /* font-family: 'Roboto';        
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.18; */
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        padding-left: 16px;
+        margin-right: 12px;
+        min-width: 358px;
+        min-height: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        background-color: var(--tbg-color);
+        color: rgba(255, 255, 255, 0.6);
+    }
+    .signmail::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+      }
+    
+    .button-sign {
+        padding: 0;
+        
+        min-width: 200px;
+        min-height: 50px;
+        font-family: 'Roboto';
+        background-color: var(--accent-color);
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        
+        color: var(--tt-color);
+        margin: 0 auto;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+        cursor: pointer;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        border: none;
+
+    }
+    .subscribe .button-icon-send {
+        fill: #FFFFFF;
+        margin-left: 10px;
+
     }
     /* Footer End */
 

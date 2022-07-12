@@ -380,6 +380,20 @@
                         </li>
                     </ul>
             </div>
+            <div class="subscribe">
+                <h3 class="h3-foot-sign">Подпишитесь на рассылку</h3>
+                <form class="sign" name="signup_form" autocomplete="on" novalidate>
+                    <label>
+                        <input class="signmail" type="email" name="email" placeholder="Email"/>
+                    </label>
+                    <button class="button-sign" type="submit" >
+                        Подписаться
+                        <svg class="button-icon-send" width="24px" height="24px" aria-hidden="true">
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
+
+                    </button>
+            </div>
         </div>
         
 	</footer>
@@ -390,6 +404,39 @@
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
             </button>
+            
+                <form class="feedback">
+                    <h3 class="main-text">Оставьте свои данные, мы вам перезвоним</h3>
+                    <label class="form">
+                        <span class="text">Имя</span>
+                        <input class="input"type="name" name="name" placeholder="">
+                      </label>
+                      <label class="form">
+                        <span class="text">Телефон</span>
+                        <input class="input"type="tel" name="tel" placeholder="">
+                      </label>
+                    <label class="form">
+                      <span class="text">Почта</span>
+                      <input class="input" type="email" name="email" placeholder="">
+                    </label>
+                    <label class="form">
+                      <span class="text">Комментарий</span>
+                      <textarea class="comment" name="feedback" rows="5" placeholder="Введите текст"></textarea>
+                    </label>
+                    <div class="form-field">
+                        
+                        <label class="form-label">
+                            <span class="license-text">
+                            Соглашаюсь с рассылкой и принимаю 
+                        <a class="license" href="">Условия договора</a> 
+                        </span>
+                        <input type="checkbox" class="form-input" name="license" id="license">
+                        </label>
+                      </div>
+                    
+                    <button class="submit-button"type="submit">Отправить</button>
+                  </form>
+            
         </div>
      </div>
 
