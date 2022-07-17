@@ -371,6 +371,7 @@
     .form-field-label {
         display: block;
         margin-bottom: 4px;
+        font-size: 12px;
     }
     .form-field-input{
         width: 100%;
